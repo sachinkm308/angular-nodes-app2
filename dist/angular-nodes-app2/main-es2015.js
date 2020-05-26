@@ -818,6 +818,10 @@ class AppComponent {
             console.log('Inside yellow green function');
             this.onClickYellowGreen();
         }
+        else if (val1 === 'blue' || val2 === 'blue') {
+            alert('Please choose one of the other 3 colors');
+            console.log('Inside yellow green function');
+        }
     }
     /* onToggle() {
       console.log('Inside Toggle');
