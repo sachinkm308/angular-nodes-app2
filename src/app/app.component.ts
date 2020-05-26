@@ -456,8 +456,12 @@ export class AppComponent {
   }
 
   onSubmit() {
-    var val1 = (<HTMLFormElement>document.getElementById('color1')).value;
-    var val2 = (<HTMLFormElement>document.getElementById('color2')).value;
+    var val1 = (<HTMLFormElement>(
+      document.getElementById('color1')
+    )).value.toLowerCase();
+    var val2 = (<HTMLFormElement>(
+      document.getElementById('color2')
+    )).value.toLowerCase();
     console.log('Submit Clicked');
     console.log(val1);
 

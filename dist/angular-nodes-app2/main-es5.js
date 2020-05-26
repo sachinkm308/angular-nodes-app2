@@ -830,8 +830,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "onSubmit",
         value: function onSubmit() {
-          var val1 = document.getElementById('color1').value;
-          var val2 = document.getElementById('color2').value;
+          var val1 = document.getElementById('color1').value.toLowerCase();
+          var val2 = document.getElementById('color2').value.toLowerCase();
           console.log('Submit Clicked');
           console.log(val1);
 
