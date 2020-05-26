@@ -11,11 +11,11 @@
     <!-- <button (click)="onClick()">Click Me</button> -->
     <form id="myForm">
         <button (click)="onAdd()">Reset</button>
-        <!-- <button (click)="onToggle()">Toggle</button>--><br> Enter Color 1: <input type="text" id="color1"> <br> Enter Color 2 : <input type="text" id="color2">
+        <button (click)="addData()">Add New Node</button><br> Enter Color 1: <input type="text" id="color1"> <br> Enter Color 2 : <input type="text" id="color2">
     </form>
     <input (click)="onSubmit()" type="submit" value="Add Edge">
-    <div class="area">
-        <canvas id="myChart" width="600" height="400"></canvas>
+    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+        <canvas id="myChart" width="500" height="500"></canvas>
         <!-- <canvas id="barChart" width="400" height="400"></canvas> -->
     </div>
 </body>

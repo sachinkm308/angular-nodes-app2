@@ -25,7 +25,7 @@ export class AppComponent {
   title = 'angular-nodes-app2';
 
   ngOnInit() {
-    /* var mixedChart = new Chart('myChart', {
+    /*var mixedChart = new Chart('myChart', {
       type: 'bubble',
       data: {
         datasets: [
@@ -77,7 +77,7 @@ export class AppComponent {
       data: {
         datasets: [
           {
-            label: 'Scatter Dataset',
+            label: 'ScatterDataset',
             data: [
               {
                 x: 1,
@@ -116,6 +116,67 @@ export class AppComponent {
             pointBorderColor: 'black',
             pointRadius: 10,
             pointHoverRadius: 10,
+          },
+        ],
+      },
+      options: {
+        title: {
+          display: true,
+        },
+        legend: false,
+        dragData: true,
+        tooltips: false,
+        scales: {
+          xAxes: [
+            {
+              ticks: {
+                min: 0,
+                max: 10,
+              },
+              gridLines: {
+                color: '#888',
+                drawOnChartArea: false,
+              },
+            },
+          ],
+          yAxes: [
+            {
+              ticks: {
+                min: 0,
+                max: 8,
+                padding: 10,
+              },
+              gridLines: {
+                color: '#888',
+                drawOnChartArea: false,
+              },
+            },
+          ],
+        },
+      },
+    });
+  }
+
+  addData() {
+    var chart = new Chart('myChart', {
+      type: 'scatter',
+      data: {
+        datasets: [
+          {
+            label: 'Scatter Dataset',
+            data: [
+              {
+                x: Math.random() * 10,
+                y: Math.random() * 8,
+              },
+            ],
+            pointBackgroundColor: 'blue',
+            pointBorderColor: 'black',
+            pointRadius: 10,
+            pointHoverRadius: 10,
+            showLine: true,
+            fill: false,
+            borderColor: 'blue',
           },
         ],
       },

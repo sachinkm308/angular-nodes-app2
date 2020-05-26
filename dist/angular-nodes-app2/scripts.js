@@ -1,3 +1,6 @@
+var canvas = document.getElementsByTagName('canvas')[0];
+canvas.width = 400;
+canvas.height = 400;
 /* function myTest() {
     alert("Welcome to custom JS");
     console.log('abc');
